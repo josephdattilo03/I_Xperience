@@ -1,0 +1,33 @@
+#title-card{
+    background-color: #EF8354;
+    height: 55vh;
+}
+
+.title-text{
+    user-select: none;
+    color: #EF8354;
+    animation-name: popout;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    transition: ease-in-out 100ms;
+    text-shadow: none;
+}
+
+@keyframes popout {
+    0% {
+        bottom: 20px;
+        text-shadow: .05vw .05vw #4F5D75;
+    }
+    100% {
+        bottom: 0px;
+        text-shadow: .2vw .2vw #4F5D75;
+    }
+}
+
+
+
+.title-text:hover {
+    transition: ease-in-out 100ms;
+    color: #F1C5A0;
+}
+

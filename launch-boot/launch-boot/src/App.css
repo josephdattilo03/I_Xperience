@@ -1,0 +1,26 @@
+#transition1 {
+    background-image: url("assets/wave-haikei.svg");
+}
+
+.spacer {
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+#my-description {
+    font-family: 'JetBrains Mono', monospace;
+    color:white;
+    background-color: #474A48;
+}
+
+#my-description a {
+    text-decoration: none;
+    color: tan;
+
+}
+
+#transition2 {
+    background-image: url("assets/wave2.svg");
+}

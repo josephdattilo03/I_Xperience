@@ -1,0 +1,56 @@
+#contact-me {
+    background-color: #88A096;
+    color: #F3EAAF;
+    height: 70vh;
+}
+
+input::placeholder, input:focus {
+    color:  #F3EAAF;
+    outline-width: 0;
+}
+
+
+
+#email-input {
+    font-size: 3vw;
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid #F3EAAF;
+    background-color: #88A096;
+    border-radius: 5px;
+}
+
+#email-input:focus {
+    color: #F3EAAF;
+}
+
+textarea, textarea:focus, textarea::placeholder {
+    background-color: #88A096;
+    border:none;
+    outline-width: 0;
+    width: 20vw;
+    height: 30vh;
+    color:  #F3EAAF;
+    font-size: 1.5vw;
+
+}
+
+#send-btn {
+    color:  #F3EAAF;
+    background-color: #88A096;
+    border: 5px solid #F3EAAF;
+    border-radius: 10px;
+    width: 25vw;
+    height: 8vh;
+    font-size: 3vw;
+    transition: ease-in-out 300ms;
+}
+
+#send-btn:hover {
+    background-color: #F3EAAF;
+    transition: ease-in-out 300ms;
+    color: #88A096;
+    transform: translate(-.5vw, -.5vw);
+    box-shadow: 3px 5px 8px teal;
+}
