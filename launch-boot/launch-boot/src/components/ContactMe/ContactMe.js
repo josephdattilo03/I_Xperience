@@ -1,5 +1,6 @@
 import { Component } from "react";
 import "./ContactMe.css";
+import {AiFillLinkedin, AiFillGithub} from "react-icons/ai"
 
 class ContactMe extends Component {
     render() {
@@ -8,8 +9,9 @@ class ContactMe extends Component {
                 <div class="row text-center">
                     <div class="col">
                         <h1 class="display-1 text-decoration-underline mt-5">Lets Talk</h1>
-                        <div class="d-inline">
-                            
+                        <div>
+                            <a href="https://www.linkedin.com/in/joseph-dattilo-471436243/"><AiFillLinkedin className="social"/></a>
+                            <a href="https://github.com/josephdattilo03"><AiFillGithub className="social"/></a>
                         </div>
                     </div>
                     <form class="col">

@@ -9,7 +9,11 @@ input::placeholder, input:focus {
     outline-width: 0;
 }
 
-
+.social {
+    width: 3vw;
+    height: 3vw;
+    color: #F3EAAF;
+}
 
 #email-input {
     font-size: 3vw;
