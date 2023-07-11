@@ -7,7 +7,10 @@ class ContactMe extends Component {
             <div id="contact-me">
                 <div class="row text-center">
                     <div class="col">
-                        <h1 class="display-1 text-decoration-underline">Lets Talk</h1>
+                        <h1 class="display-1 text-decoration-underline mt-5">Lets Talk</h1>
+                        <div class="d-inline">
+                            
+                        </div>
                     </div>
                     <form class="col">
                         <input
