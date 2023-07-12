@@ -190,6 +190,7 @@ console.log(filterStrArray(["hello","world","family","class"], "world"))
 console.log(filterNumArray([1,2,3,4,5], 3))
 console.log(todaysDate())
 console.log(tenLarger([1,3,5,61,5,54,24]))
+console.log(cityArea("Nashville"))
 
 
 
