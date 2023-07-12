@@ -5,8 +5,6 @@ function printEven(number) {
     }
 }
 
-//TODO fib sequence
-
 function fibSequence(length) {
     if (length === 1) {
         console.log(0)
@@ -59,6 +57,20 @@ function maxArr(arr) {
 }
 function minArr(arr) {
     console.log(arr.sort()[0])
+}
+
+function cityArea(city) {
+    switch (city.toLowerCase()) {
+        case "nashville":
+            return 615
+            break
+        case "new york":
+            return 347
+            break
+        case "california":
+            return 314
+            break
+    }
 }
 
 function countVowel(str) {
