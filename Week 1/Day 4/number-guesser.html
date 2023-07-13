@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="number-guesser.css">
+</head>
+<script src="number-guesser.js"></script>
+<body class="bg-slate-800">
+    <div class="text-center text-teal-500">
+        <h1 id="title">1</h1>
+        <h2 class="text-7xl mb-6">Number Guesser</h2>
+        <p class="text-lg">Guess a number between 1 and 10 in the box below</p>
+    </div>
+    <form class="w-full max-w-sm mx-auto text-2xl">
+        <div class="flex items-center border-b border-teal-500 py-2">
+            <input
+                class="appearance-none bg-transparent border-none w-full text-teal-500 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Make your guess" aria-label="Full name"
+                id="input">
+            <button
+                class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+                type="button"
+                onclick="clickedButton()">
+                Guess
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>
