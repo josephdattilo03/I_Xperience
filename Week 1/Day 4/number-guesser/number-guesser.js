@@ -1,4 +1,4 @@
-let numb = Math.floor(Math.random() * 10)
+let numb = Math.floor(1 + Math.random() * 10)
 
 document.addEventListener("DOMContentLoaded", function() {
     const title = document.getElementById("title")

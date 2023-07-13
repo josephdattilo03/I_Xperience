@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<script src="movie-guesser.js"></script>
+<body class="bg-slate-800">
+    <div class="text-center text-teal-500 mt-9">
+        <h2 class="text-7xl mb-6">Movie Guesser</h2>
+        <p class="text-lg mb-6">Guess the movie based on the description below:</p>
+        <p id="description" class="mb-9 italic"></p>
+    </div>
+    <form class="w-full max-w-sm mx-auto text-2xl">
+        <div class="flex items-center border-b border-teal-500 py-2">
+            <input
+                class="appearance-none bg-transparent border-none w-full text-teal-500 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Make your guess" aria-label="Full name"
+                id="input">
+            <button
+                class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+                type="button"
+                onclick="clickedButtonSubmit()">
+                Guess
+            </button>
+            <button class="flex-shrink-0  border-2 text-teal-500 hover:text-teal-800 text-sm py-1.5 px-2 rounded border-teal-500 ml-2" type="button"
+            onclick="clickedHintButton()">
+                Hint
+            </button>
+        </div>
+    </form>
+    <p id="hint" class="text-teal-500 mt-3 text-center"></p>
+</body>
+
+</html>
