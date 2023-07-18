@@ -31,6 +31,11 @@ function App() {
     }))
   }
 
+  function onCompleteTask(task) {
+    task.completed = true
+    console.log(task)
+  }
+
   function saveTasksToLocal() {
     const json = JSON.stringify(tasks)
     localStorage.setItem("tasks",json)
@@ -56,7 +61,7 @@ function App() {
     <div className="App">
       <h1 className="text-center mt-5 h1" id="title">Task<br/> Manager</h1>
       <TaskForm onTaskCreated={onTaskCreated} taskToEdit={editTask}/>
-      <TaskTable tasks={tasks} onDeleteTask={onDeleteTask} onTaskEdit={onTaskEdit}/>
+      <TaskTable tasks={tasks} onDeleteTask={onDeleteTask} onTaskEdit={onTaskEdit} onCompleteTask={onCompleteTask}/>
     </div>
   );
 }

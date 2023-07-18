@@ -12,4 +12,5 @@ export class Task {
         task.completed = json.completed
         return task
     }
+    
 }
