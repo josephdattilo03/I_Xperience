@@ -1,0 +1,10 @@
+.task {
+    border: 1px solid #D3D3D3;
+    background-color: rgb(240, 240, 240);
+}
+.priority {
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    border: 2px solid darkslategray;
+}
