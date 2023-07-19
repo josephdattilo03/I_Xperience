@@ -1,0 +1,8 @@
+#searchbar {
+    height: 5vh;
+    font-size: 1.5vw;
+}
+#searchbar::placeholder {
+    color: white;
+    font-size: 1.5vw;
+}
