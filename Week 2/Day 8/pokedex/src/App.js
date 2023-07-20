@@ -1,11 +1,10 @@
 
-import { useState } from 'react';
+
 import './App.css';
 import SearchBar from './components/SearchBar';
 import "bootstrap/dist/css/bootstrap.css"
 
 function App() {
-  const [data, setData] = useState("")
   return (
     <div className="App bg-dark">
       <h1 className='text-white text-center pt-4' id="title">Pokedex</h1>
