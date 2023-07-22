@@ -1,13 +1,14 @@
 import {useEffect, useState} from 'react'
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
-import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import RecipeForm from "./components/RecipeForm"
 import Recipe from "./models/recipe"
 import RecipeService from "./services/recipe-service"
 import Register from './components/Register';
 import Login from './components/Login';
+import Navbar from './components/Navbar';
 
 function App() {
   const [recipes, setRecipes] = useState([])
@@ -44,6 +45,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<RecipeForm onRecipeRemove={onRecipeRemove} recipes = {recipes} onRecipeCreate={onRecipeCreate}/>}/>
         <Route path="/register" element={<Register/>}/>
