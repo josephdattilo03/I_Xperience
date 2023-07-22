@@ -8,10 +8,19 @@ import Recipe from "./models/recipe"
 import RecipeService from "./services/recipe-service"
 import Register from './components/Register';
 import Login from './components/Login';
+import {auth} from "./firebase/firebase"
 import Navbar from './components/Navbar';
+import { onAuthStateChanged } from 'firebase/auth';
 
 function App() {
   const [recipes, setRecipes] = useState([])
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+  }, []);
 
   useEffect(() => {
     if (!recipes.length) {
@@ -45,7 +54,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Navbar/>
+    <Navbar user={user}/>
       <Routes>
         <Route path="/" element={<RecipeForm onRecipeRemove={onRecipeRemove} recipes = {recipes} onRecipeCreate={onRecipeCreate}/>}/>
         <Route path="/register" element={<Register/>}/>
