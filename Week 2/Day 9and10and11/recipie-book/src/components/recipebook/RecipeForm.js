@@ -43,7 +43,7 @@ export default function RecipeForm(props) {
                         ingredients.map((ingredient, index) => {
                             return <div key={index} className='form-group'>
                                 <label>Ingredient {index + 1}</label>
-                                <input type="text" className='form-control' placeholder='Ingredient' onChange={(e) => {
+                                <input type="text" value={ingredients[index]} className='form-control' placeholder='Ingredient' onChange={(e) => {
                                     let newArr = [...ingredients]
                                     newArr[index] = e.target.value
                                     setIngredients(newArr)
